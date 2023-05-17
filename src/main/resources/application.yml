@@ -1,0 +1,19 @@
+server:
+  port: 7777
+  servlet:
+    context-path: /test
+spring:
+  datasource:
+    password: 201030
+    url: jdbc:mysql://localhost:58066/db01
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  banner:
+    location: 阿弥陀佛.txt
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tb_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #配置日志输出都控制台
